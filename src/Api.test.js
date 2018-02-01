@@ -26,13 +26,7 @@ describe('fetchApi', () => {
 
 })
 
-
 // describe('getPeople', () => {
-//   let mockPerson
-//   let mockPeople
-//   let url
-//   let getMorePeopleData
-
 //   beforeAll(() => {
 //     getMorePeopleData = jest.fn()
 
@@ -57,21 +51,3 @@ describe('fetchApi', () => {
 //     ]
 //   })
 
-//   test('fetch is called with the correct params', () => {
-//     const expectedParams = url
-
-//     window.fetch = jest.fn().mockImplementation(() => {
-//       return Promise.resolve({
-//         ok: true,
-//         status: 200,
-//         json: () => Promise.resolve({
-//           people: mockPeople
-//         })
-//       })
-//     })
-
-//     getPeople()
-//     expect(window.fetch).toHaveBeenCalledWith(expectedParams)
-
-//   })
-// })

@@ -7,10 +7,9 @@ export const fetchApi = async (url) => {
   return jsonFetch;
 }
 
-const getFilmNum = () => {
+export const getFilmNum = () => {
   return Math.floor(Math.random() * 7 + 1)
 }
-
 
 export const getScroll = async () => {
   const random = getFilmNum()
@@ -23,7 +22,6 @@ export const getPeople = async () => {
   const { results } = await fetchApi(`${url}/people`)
   const completePeople = getMorePeopleData(results)
 
-  console.log(completePeople)
   return completePeople
 }
 
