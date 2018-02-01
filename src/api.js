@@ -1,6 +1,6 @@
 const url = 'https://swapi.co/api';
 
-const fetchApi = async (url) => {
+export const fetchApi = async (url) => {
   const fetched = await fetch(url)
   const jsonFetch = await fetched.json()
     
@@ -23,6 +23,7 @@ export const getPeople = async () => {
   const { results } = await fetchApi(`${url}/people`)
   const completePeople = getMorePeopleData(results)
 
+  console.log(completePeople)
   return completePeople
 }
 
