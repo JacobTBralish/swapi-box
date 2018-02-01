@@ -6,38 +6,28 @@ import renderer from 'react-test-renderer';
 
 import { mockFilm } from '../mockData'
 
-jest.mock('../api')
-
+import * as api from '../api'
 
 describe( 'App Component', () => {
-  let url 
-  let getScroll
-
   beforeAll(() => {
-    url = 'https://swapi.co/api/films/1'
-
     window.fetch = jest.fn().mockImplementation(() => {
       return Promise.resolve({
         ok: true,
         status: 200,
         json: () => Promise.resolve({
-          scroll: mockFilm
+          scroll: mockFilm 
         })
       })
     })
-
-    getScroll = jest.fn().mockImplementation( async () => {
-      const scroll = await window.fetch(url)
-      return scroll;
-    })
+   api.getScroll = () => (mockFilm)
   })
 
-  test('renders without crashing', async () => {
+  test('componentDidMount should set the proper state', async () => {
+    const expectedState = mockFilm
     const renderedComp = await shallow(<App />);
+
     await renderedComp.update()
 
-    console.log(renderedComp.state())
-
-    expect(renderedComp.state('scroll')).toEqual({})
+    expect(renderedComp.state('scroll')).toEqual(mockFilm)
   });
 });
