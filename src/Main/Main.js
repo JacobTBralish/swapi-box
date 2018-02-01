@@ -9,7 +9,7 @@ const Main = () => {
     <div>
       <Switch>
         <Route exact path='/' />
-        <Route path='/people' component={People} />
+        <Route path='/people' render={(...props)component={People}} />
         <Route path='/planets' component={Planets} />
         <Route path='/vehicles' component={Vehicles} />
       </Switch>

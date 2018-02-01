@@ -25,7 +25,7 @@ class People extends Component {
   render() {
 
     const peopleToRender = this.state.people.map( (person, i) => {
-      return <Card {...person} key={person.name + i}/>
+      return <Card {...person} key={person.Name + i}/>
     })
 
     return (
