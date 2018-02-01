@@ -2,9 +2,12 @@ const url = 'https://swapi.co/api';
 
 export const fetchApi = async (url) => {
   const fetched = await fetch(url)
-  const jsonFetch = await fetched.json()
-    
-  return jsonFetch;
+  if(fetched.status >= 400) {
+    throw(new Error('Error retrieving sick Star Wars Data'))
+  }
+  else {
+     return await fetched.json()
+  }
 }
 
 export const getFilmNum = () => {
@@ -33,7 +36,8 @@ const getMorePeopleData = (people) => {
       Name: name , 
       Homeworld: homeworld.name,
       Population: homeworld.population, 
-      Species: species.name}
+      Species: species.name
+    }
   })
 
   return Promise.all(completePeople)
@@ -47,7 +51,7 @@ export const getPlanets = async () => {
 }
 
 const getMorePlanetData = (planets) => {
-  const completePlanets = planets.map( async ({ name, residents, terrain, population}) => {
+  const completePlanets = planets.map( async ({ name, residents, terrain, population }) => {
     const retrievedResidents = await getResidents(residents)
 
     return {
@@ -64,6 +68,7 @@ const getMorePlanetData = (planets) => {
 const getResidents = (residents) => {
   const retrievedResidents = residents.map( async resident => {
     const { name } = await fetchApi(resident)
+    
     return name; 
   })
 

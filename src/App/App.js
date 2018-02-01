@@ -15,7 +15,6 @@ class App extends Component {
 
   async componentDidMount() {
     const scroll = await getScroll()
-    debugger;
     this.setState({
       scroll
     })
