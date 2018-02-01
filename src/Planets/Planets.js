@@ -25,7 +25,7 @@ class Planets extends Component {
   render() {
 
     const planetsToRender = this.state.planets.map( (planet, i) => {
-      return <Card {...planet} key={planet.name + i}/>
+      return <Card {...planet} key={planet.Name + i}/>
     })
 
     return (

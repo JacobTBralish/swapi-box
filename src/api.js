@@ -80,8 +80,7 @@ export const getVehicles = async () => {
       Class : vehicle_class, 
       Passengers: passengers
     }
-
-    return vehicleArray;
   })
 
+  return vehicleArray;
 }

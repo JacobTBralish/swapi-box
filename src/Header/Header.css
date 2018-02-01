@@ -1,8 +1,31 @@
 li, a {
   list-style: none;
+  margin: auto;
+  display: inline-block;
+  width: 200px;
 }
 
 a:visited, a {
   color: black;
   text-decoration: none;
 }
+
+ul {
+  padding: 0;
+}
+
+nav, header {
+  margin: auto;
+  width: 100%;
+}
+
+h1 {
+  width: 200px;
+  margin: auto;
+}
+
+/*#3A3A38*/
+/*#04315B
+#4E7BC9
+#E9B835
+#6E99C1*/
