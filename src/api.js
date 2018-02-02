@@ -14,9 +14,8 @@ export const getFilmNum = () => {
   return Math.floor(Math.random() * 7 + 1)
 }
 
-export const getScroll = async () => {
-  const random = getFilmNum()
-  const {title, opening_crawl, release_date} = await fetchApi(`${url}/films/${random}`)
+export const getScroll = async (num) => {
+  const { title, opening_crawl, release_date } = await fetchApi(`${url}/films/${num}`)
    
   return { title, opening_crawl, release_date }
 }

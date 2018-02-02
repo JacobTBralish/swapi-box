@@ -9,8 +9,7 @@ class CardContainer extends Component {
     this.state = {
       people: JSON.parse(localStorage.getItem('people')) || [],
       planets: JSON.parse(localStorage.getItem('planets')) || [],
-      vehicles: JSON.parse(localStorage.getItem('vehicles')) || [],
-      favorites: JSON.parse(localStorage.getItem('favorites')) || []
+      vehicles: JSON.parse(localStorage.getItem('vehicles')) || []
     }
   }
 
@@ -41,8 +40,8 @@ class CardContainer extends Component {
   render() {
     const { name } = this.props
 
-    const Cards = this.state[name].map( card => {
-      return <Card {...card} /> 
+    const Cards = this.state[name].map( (card, i) => {
+      return <Card {...card} key={card.Name + i}/> 
     })
 
     return (
