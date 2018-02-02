@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContainer Component that it renders without crashing 1`] = `
+<div
+  className="card-container"
+/>
+`;
+
+exports[`CardContainer Component that the cards render accordingly when state changes/new props are received 1`] = `
+<div
+  className="card-container"
+>
+  <Card
+    Name="Luke Skywalker"
+    key="Luke Skywalker0"
+  />
+</div>
+`;
+
+exports[`CardContainer Component that the cards render accordingly when state changes/new props are received 2`] = `
+<div
+  className="card-container"
+>
+  <Card
+    Name="Tatooine"
+    Population="200000"
+    Residents={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
+    Terrain="desert"
+    key="Tatooine0"
+  />
+</div>
+`;

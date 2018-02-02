@@ -9,7 +9,9 @@ import { mockFilm } from '../mockData'
 import * as api from '../api'
 
 describe( 'App Component', () => {
+
   beforeAll(() => {
+
     window.fetch = jest.fn().mockImplementation(() => {
       return Promise.resolve({
         ok: true,
@@ -19,6 +21,7 @@ describe( 'App Component', () => {
         })
       })
     })
+
    api.getScroll = () => (mockFilm)
   })
 
