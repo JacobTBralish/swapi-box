@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main Component it should render without crashing 1`] = `
+<div>
+  <Switch>
+    <Route
+      exact={true}
+      path="/"
+    />
+    <Route
+      path="/people"
+      render={[Function]}
+    />
+    <Route
+      path="/planets"
+      render={[Function]}
+    />
+    <Route
+      path="/vehicles"
+      render={[Function]}
+    />
+  </Switch>
+</div>
+`;
