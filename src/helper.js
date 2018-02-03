@@ -19,6 +19,5 @@ export const makeNewState = (currState, event) => {
       
     const newState = currState.filter( card => withoutSelected(event, card))
     newState.splice(index, 0, newCard)
-
     return newState   
 }
