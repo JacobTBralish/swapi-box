@@ -19,6 +19,10 @@ exports[`Main Component it should render without crashing 1`] = `
       path="/vehicles"
       render={[Function]}
     />
+    <Route
+      path="/favorites"
+      render={[Function]}
+    />
   </Switch>
 </div>
 `;

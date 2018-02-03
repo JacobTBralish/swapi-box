@@ -3,7 +3,11 @@
 exports[`CardContainer Component that it renders without crashing 1`] = `
 <div
   className="card-container"
-/>
+>
+  <h1>
+     Loading... 
+  </h1>
+</div>
 `;
 
 exports[`CardContainer Component that the cards render accordingly when state changes/new props are received 1`] = `
@@ -12,6 +16,8 @@ exports[`CardContainer Component that the cards render accordingly when state ch
 >
   <Component
     Name="Luke Skywalker"
+    handleClick={[Function]}
+    id="Luke Skywalker"
     key="Luke Skywalker0"
   />
 </div>
@@ -31,6 +37,8 @@ exports[`CardContainer Component that the cards render accordingly when state ch
       ]
     }
     Terrain="desert"
+    handleClick={[Function]}
+    id="Tatooine"
     key="Tatooine0"
   />
 </div>

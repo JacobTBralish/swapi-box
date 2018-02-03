@@ -2,23 +2,12 @@
 
 exports[`Card Component that it renders without crashing 1`] = `
 <div
-  className="card"
+  className="card undefined"
 />
 `;
 
 exports[`Card Component that it should receive and render props 1`] = `
 <div
-  className="card"
->
-  <li
-    className="card-line"
-    key="name"
-  >
-     
-    name
-     : 
-    Luke Skywalker
-     
-  </li>
-</div>
+  className="card undefined"
+/>
 `;

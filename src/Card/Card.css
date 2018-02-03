@@ -7,3 +7,7 @@
 .card-line {
   display: block;
 }
+
+.favorite {
+  border: 2px solid magenta;
+}

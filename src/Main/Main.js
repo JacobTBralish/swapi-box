@@ -17,6 +17,9 @@ const Main = () => {
        <Route path='/vehicles' render={() => (
           <CardContainer name='vehicles' fetch={getVehicles} />
         )} />
+       <Route path='/favorites' render={() => (
+        <CardContainer name='favorites' />
+        )} />
       </Switch>
     </div>
   )
