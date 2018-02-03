@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Card } from '../Card/Card'
 import './CardContainer.css'
+import { addFavoriteProp, makeNewState } from '../helper'
 
 
 class CardContainer extends Component {
@@ -15,31 +16,17 @@ class CardContainer extends Component {
     }
   }
 
-  addFavoriteProp = (card) => {
-    return {...card, style: 'favorite'}
-  }
-
-  findSelected = (event, card) => {
-    return event.target.id === card.Name
-  }
-
   handleClick = (event) => {
     const { name } = this.props
 
     if(!event.target.classList.contains('favorite')) {
-    
-      const cardToFavorite = this.state[name].find( card => this.findSelected(event, card))
-      const notFavorites = this.state[name].filter( card => event.target.id !== card.Name )
-
-      const newCard = this.addFavoriteProp(cardToFavorite)
-
-      const newState = [...notFavorites, newCard]
-
-      const currentFavorites = [...this.state.favorites]
+      const selectedCard = this.state[name].find( card => event.target.id === card.Name)
+      const newCard = addFavoriteProp(selectedCard)
+      const newState = makeNewState(this.state[name], event)
 
       this.setState({
         [name] : newState,
-        favorites: [...currentFavorites, newCard]
+        favorites: [...this.state.favorites, newCard]
       }, localStorage.setItem([name], JSON.stringify(newState)))
     }
   }

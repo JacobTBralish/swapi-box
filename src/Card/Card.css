@@ -6,6 +6,7 @@
 
 .card-line {
   display: block;
+  pointer-events: none;
 }
 
 .favorite {
