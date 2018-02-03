@@ -165,8 +165,8 @@ export const cleanPlanetsMock = [
   { Name: "Tatooine",
     Population: "200000",
     Residents: [
-      undefined,
-      undefined
+      "undefined ",
+      "undefined "
     ],
     Terrain: 'desert' }
   ]

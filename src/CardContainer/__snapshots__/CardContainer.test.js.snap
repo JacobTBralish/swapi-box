@@ -10,7 +10,7 @@ exports[`CardContainer Component that the cards render accordingly when state ch
 <div
   className="card-container"
 >
-  <Card
+  <Component
     Name="Luke Skywalker"
     key="Luke Skywalker0"
   />
@@ -21,13 +21,13 @@ exports[`CardContainer Component that the cards render accordingly when state ch
 <div
   className="card-container"
 >
-  <Card
+  <Component
     Name="Tatooine"
     Population="200000"
     Residents={
       Array [
-        undefined,
-        undefined,
+        "undefined ",
+        "undefined ",
       ]
     }
     Terrain="desert"

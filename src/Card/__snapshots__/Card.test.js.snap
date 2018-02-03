@@ -11,6 +11,7 @@ exports[`Card Component that it should receive and render props 1`] = `
   className="card"
 >
   <li
+    className="card-line"
     key="name"
   >
      

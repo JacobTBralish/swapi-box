@@ -25,13 +25,13 @@ describe( 'App Component', () => {
    api.getScroll = () => (mockFilm)
   })
 
-  test('it should mount without crashing', () => {
+  test('that it mounts without crashing', () => {
     const renderedComp = shallow(<App />)
 
     expect(renderedComp).toMatchSnapshot();
   })
 
-  test('componentDidMount should set the proper state', async () => {
+  test('that componentDidMount should set the proper state', async () => {
     const expectedState = mockFilm
     const renderedComp = await shallow(<App />);
 
