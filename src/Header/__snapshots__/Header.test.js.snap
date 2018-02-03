@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component that it should mount with crashing 1`] = `
+<header>
+  <h1>
+    <NavLink
+      activeClassName="active"
+      ariaCurrent="true"
+      to="/"
+    >
+      SWAPI-BOX
+    </NavLink>
+  </h1>
+  <nav>
+    <ul>
+      <li>
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          to="/people"
+        >
+          People
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          to="/planets"
+        >
+          Planets
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          to="/vehicles"
+        >
+          Vehicles
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          to="/favorites"
+        >
+          Favorites
+        </NavLink>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;

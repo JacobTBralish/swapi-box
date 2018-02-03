@@ -8,16 +8,16 @@ const Header = (props) => {
       <h1><NavLink to='/'>SWAPI-BOX</NavLink></h1>
       <nav>
         <ul>
-          <li onClick={props.handleClick}>
+          <li>
             <NavLink to='/people'>People</NavLink>
           </li>
-          <li onClick={props.handleClick}>
+          <li>
             <NavLink to='/planets'>Planets</NavLink>
           </li>
-          <li onClick={props.handleClick}>
+          <li>
             <NavLink to='/vehicles'>Vehicles</NavLink>
           </li>
-          <li onClick={props.handleClick}>
+          <li>
             <NavLink to='/favorites'>Favorites</NavLink>
           </li>
         </ul>

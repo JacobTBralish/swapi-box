@@ -3,3 +3,12 @@
   height: 200px;
   border: 2px solid black;
 }
+
+.card-line {
+  display: block;
+  pointer-events: none;
+}
+
+.favorite {
+  border: 2px solid magenta;
+}

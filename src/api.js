@@ -68,7 +68,7 @@ const getResidents = (residents) => {
   const retrievedResidents = residents.map( async resident => {
     const { name } = await fetchApi(resident)
     
-    return name; 
+    return name + ' '; 
   })
 
   return Promise.all(retrievedResidents)
