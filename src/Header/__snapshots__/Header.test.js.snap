@@ -8,6 +8,10 @@ exports[`Header Component that it should mount with crashing 1`] = `
       ariaCurrent="true"
       to="/"
     >
+      <i
+        aria-hidden="true"
+        className="swg swg-starwars swg-5x"
+      />
       SWAPI-BOX
     </NavLink>
   </h1>

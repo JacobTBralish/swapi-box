@@ -5,6 +5,8 @@ exports[`App Component that it mounts without crashing 1`] = `
   className="App"
 >
   <Header />
-  <Main />
+  <Main
+    scroll={Object {}}
+  />
 </div>
 `;
