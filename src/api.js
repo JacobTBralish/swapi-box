@@ -14,10 +14,20 @@ export const getFilmNum = () => {
   return Math.floor(Math.random() * 7 + 1)
 }
 
+const episodeArray = [
+  "Episode IV",
+  "Episode V",
+  "Episode VI",
+  "Episode I",
+  "Episode II",
+  "Episode III",
+  "Episode VII"  
+]
+
 export const getScroll = async (num) => {
   const { title, opening_crawl, release_date } = await fetchApi(`${url}/films/${num}`)
-   
-  return { title, opening_crawl, release_date }
+  const episodeTitle = episodeArray[ num-1 ]
+  return { title, episodeTitle, opening_crawl, release_date }
 }
 
 export const getPeople = async () => {

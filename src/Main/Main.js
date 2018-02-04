@@ -3,10 +3,11 @@ import CardContainer from '../CardContainer/CardContainer'
 import Welcome from '../Welcome/Welcome'
 import { getPeople, getPlanets, getVehicles } from '../api'
 import { Switch, Route } from 'react-router-dom'
+import './Main.css'
 
 const Main = ({ scroll }) => {
   return( 
-    <div>
+    <div className="container">
       <Switch>
         <Route exact path='/' render={() => (
           <Welcome scroll={scroll} /> 

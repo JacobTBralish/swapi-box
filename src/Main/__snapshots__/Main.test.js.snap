@@ -1,11 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Main Component it should render without crashing 1`] = `
-<div>
+<div
+  className="container"
+>
   <Switch>
     <Route
       exact={true}
       path="/"
+      render={[Function]}
     />
     <Route
       path="/people"
