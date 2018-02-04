@@ -1,13 +1,16 @@
 import React from 'react';
 import CardContainer from '../CardContainer/CardContainer'
+import Welcome from '../Welcome/Welcome'
 import { getPeople, getPlanets, getVehicles } from '../api'
 import { Switch, Route } from 'react-router-dom'
 
-const Main = () => {
+const Main = ({ scroll }) => {
   return( 
     <div>
       <Switch>
-        <Route exact path='/' />
+        <Route exact path='/' render={() => (
+          <Welcome scroll={scroll} /> 
+        )} />
         <Route path='/people' render={() => (
           <CardContainer name='people' fetch={getPeople} />
         )} />

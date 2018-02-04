@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Main />
+        <Main scroll={this.state.scroll} />
       </div>
     );
   }
