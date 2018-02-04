@@ -11,7 +11,7 @@ class CardContainer extends Component {
       people: JSON.parse(localStorage.getItem('people')) || [],
       planets: JSON.parse(localStorage.getItem('planets')) || [],
       vehicles: JSON.parse(localStorage.getItem('vehicles')) || [],
-      favorites: [],
+      favorites: JSON.parse(localStorage.getItem('favorites')) || [],
       loading: null
     }
   }
@@ -29,6 +29,10 @@ class CardContainer extends Component {
         favorites: [...this.state.favorites, newCard]
       }, localStorage.setItem([name], JSON.stringify(newState)))
     }
+  }
+
+  componentWillUnmount() {
+    localStorage.setItem('favorites', JSON.stringify(this.state.favorites))
   }
 
   async componentDidMount() {
