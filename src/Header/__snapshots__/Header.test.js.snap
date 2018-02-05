@@ -9,6 +9,7 @@ exports[`Header Component that it should mount with crashing 1`] = `
     to="/"
   >
     <img
+      alt="star-wars-logo"
       src="star-wars-logo.png"
     />
     <h1

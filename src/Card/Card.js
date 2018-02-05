@@ -27,7 +27,7 @@ export const Card = (props) => {
 };
 
 Card.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
   style: PropTypes.string,
-  handleClick: PropTypes.func.isRequired
+  handleClick: PropTypes.func
 };

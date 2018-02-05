@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
-import { Card } from '../Card/Card'
-import './CardContainer.css'
-import { addFavoriteProp, makeNewState } from '../helper'
+import React, { Component } from 'react';
+import { Card } from '../Card/Card';
+import './CardContainer.css';
+import { addFavoriteProp, makeNewState } from '../helper';
+import PropTypes from 'prop-types';
 
 
 class CardContainer extends Component {
@@ -90,4 +91,9 @@ class CardContainer extends Component {
   }
 }
 
-export default CardContainer
+CardContainer.propTypes = {
+  name: PropTypes.string,
+  fetch: PropTypes.func,
+};
+
+export default CardContainer;
