@@ -4,7 +4,9 @@ exports[`CardContainer Component that it renders without crashing 1`] = `
 <div
   className="card-container"
 >
-  <h1>
+  <h1
+    className="loading"
+  >
      Loading... 
   </h1>
 </div>
