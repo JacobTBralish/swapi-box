@@ -8,3 +8,9 @@ body, html, #root {
   text-align: center;
   background-color: black;
 }
+
+@media screen and (max-width: 1250px) {
+  body, html, #root {
+    overflow: auto;
+  }
+}

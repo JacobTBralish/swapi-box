@@ -1,8 +1,22 @@
 .card {
   width: 200px;
   height: 200px;
-  border: 2px solid black;
   background: white;
+  background-color: rgba(42, 44, 44, 0.5);
+  border: 1px solid rgba(196, 150, 0, 0.7);
+  margin: 10px 5px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.card:hover {
+  cursor: pointer;
+  border: 1px solid red;
+  -webkit-box-shadow: 0px 0px 51px 8px rgba(255,0,0,1);
+  -moz-box-shadow: 0px 0px 51px 8px rgba(255,0,0,1);
+  box-shadow: 0px 0px 51px 8px rgba(255,0,0,1);
 }
 
 .card-line {
@@ -11,5 +25,19 @@
 }
 
 .favorite {
-  border: 2px solid magenta;
+  -webkit-box-shadow: 0px 0px 51px 8px rgba(255,0,0,1);
+  -moz-box-shadow: 0px 0px 51px 8px rgba(255,0,0,1);
+  box-shadow: 0px 0px 51px 8px rgba(255,0,0,1);
+  border: 1px solid red;
+}
+
+.title {
+  color: #E9B835;
+  font-weight: 600;
+}
+
+.content {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
 }

@@ -22,7 +22,7 @@ const Main = ({ scroll }) => {
           <CardContainer name='vehicles' fetch={getVehicles} />
         )} />
        <Route path='/favorites' render={() => (
-        <CardContainer name='favorites' />
+        <CardContainer name='favorites' fetch={() => []}/>
         )} />
       </Switch>
     </div>

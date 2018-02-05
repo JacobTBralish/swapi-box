@@ -6,7 +6,7 @@ import Logo from '../images/star-wars-logo.png'
 const Header = (props) => {
   return(
     <header>
-      <NavLink to='/'>
+      <NavLink to='/' className='logo'>
         <img src={Logo} />
         <h1 className='home-header'>
          THE API STRIKES BACK
@@ -15,7 +15,7 @@ const Header = (props) => {
       <nav>
         <ul>
           <li className='nav-item'>
-            <NavLink to='/people'>People</NavLink>
+            <NavLink to='/people' >People</NavLink>
           </li>
           <li className='nav-item'>
             <NavLink to='/planets'>Planets</NavLink>
