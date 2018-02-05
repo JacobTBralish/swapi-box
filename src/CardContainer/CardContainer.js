@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Card } from '../Card/Card';
 import './CardContainer.css';
-import { addFavoriteProp, makeNewState } from '../helper';
 import PropTypes from 'prop-types';
 
 
@@ -19,11 +18,16 @@ class CardContainer extends Component {
 
   handleClick = (event) => {
     const { name } = this.props
-
     if(!event.target.classList.contains('favorite')) {
-      const selectedCard = this.state[name].find( card => event.target.id === card.Name)
-      const newCard = addFavoriteProp(selectedCard)
-      const newState = makeNewState(this.state[name], event)
+      const newState = this.state[name].map((card) => {
+        return card.Name === event.target.id ? {...card, style: 'favorite'} : card;
+      });
+
+      const newCard = this.state[name].find((card) => {
+        return card.Name === event.target.id;
+      });
+
+      newCard.style = 'favorite';
 
       this.setState({
         [name] : newState,
