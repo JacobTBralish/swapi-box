@@ -1,15 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Header.css'
-import Logo from '../images/star-wars-logo.png'
+import './Header.css';
+import Logo from '../images/star-wars-logo.png';
 
-const Header = (props) => {
-  return(
+const Header = () => {
+  return (
     <header>
       <NavLink to='/' className='logo'>
-        <img src={Logo} />
+        <img src={Logo} alt="star-wars-logo"/>
         <h1 className='home-header'>
-         THE API STRIKES BACK
+          THE API STRIKES BACK
         </h1>
       </NavLink>
       <nav>
@@ -29,7 +29,7 @@ const Header = (props) => {
         </ul>
       </nav>
     </header>
-  )
-}
+  );
+};
 
 export default Header;

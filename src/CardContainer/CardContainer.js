@@ -83,7 +83,7 @@ class CardContainer extends Component {
 
     return (
       <div className='card-container'>
-        { this.state.loading && <h1> Loading... </h1> }
+        { this.state.loading && <h1 className='loading'> Loading... </h1> }
         {Cards}
       </div>
     )

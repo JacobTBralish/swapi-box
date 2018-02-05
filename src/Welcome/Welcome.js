@@ -1,8 +1,9 @@
-import React from 'react'
-import './Welcome.css'
+import React from 'react';
+import './Welcome.css';
+import PropTypes from 'prop-types';
 
-const Welcome = ({scroll}) => {
-  return(
+const Welcome = ({ scroll }) => {
+  return (
     <section className="crawl-container">
       <div className="crawl">
         <div className="title">
@@ -12,7 +13,17 @@ const Welcome = ({scroll}) => {
         <p className='body-text'> {scroll.opening_crawl} </p>
       </div>
     </section>
-  ) 
-}
+  );
+};
 
-export default Welcome
+Welcome.propTypes = {
+  scroll: PropTypes.shape({
+    episodeTitle: PropTypes.string,
+    title: PropTypes.string,
+    opening_crawl: PropTypes.string,
+    episode_id: PropTypes.number,
+    release_date: PropTypes.string
+  })
+};
+
+export default Welcome;

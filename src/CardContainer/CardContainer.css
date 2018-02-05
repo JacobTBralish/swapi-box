@@ -7,3 +7,10 @@
   justify-content: center;
   margin: 10px auto;
 }
+
+.loading {
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 300%;
+  font-weight: 600;
+}
