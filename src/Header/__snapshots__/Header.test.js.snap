@@ -2,22 +2,26 @@
 
 exports[`Header Component that it should mount with crashing 1`] = `
 <header>
-  <h1>
-    <NavLink
-      activeClassName="active"
-      ariaCurrent="true"
-      to="/"
+  <NavLink
+    activeClassName="active"
+    ariaCurrent="true"
+    className="logo"
+    to="/"
+  >
+    <img
+      src="star-wars-logo.png"
+    />
+    <h1
+      className="home-header"
     >
-      <i
-        aria-hidden="true"
-        className="swg swg-starwars swg-5x"
-      />
-      SWAPI-BOX
-    </NavLink>
-  </h1>
+      THE API STRIKES BACK
+    </h1>
+  </NavLink>
   <nav>
     <ul>
-      <li>
+      <li
+        className="nav-item"
+      >
         <NavLink
           activeClassName="active"
           ariaCurrent="true"
@@ -26,7 +30,9 @@ exports[`Header Component that it should mount with crashing 1`] = `
           People
         </NavLink>
       </li>
-      <li>
+      <li
+        className="nav-item"
+      >
         <NavLink
           activeClassName="active"
           ariaCurrent="true"
@@ -35,7 +41,9 @@ exports[`Header Component that it should mount with crashing 1`] = `
           Planets
         </NavLink>
       </li>
-      <li>
+      <li
+        className="nav-item"
+      >
         <NavLink
           activeClassName="active"
           ariaCurrent="true"
@@ -44,7 +52,9 @@ exports[`Header Component that it should mount with crashing 1`] = `
           Vehicles
         </NavLink>
       </li>
-      <li>
+      <li
+        className="nav-item"
+      >
         <NavLink
           activeClassName="active"
           ariaCurrent="true"

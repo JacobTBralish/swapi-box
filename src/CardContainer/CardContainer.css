@@ -1,8 +1,9 @@
 .card-container {
-  width: 80%;
+  width: 90%;
   height: 100%;
   display: flex;
   flex-flow: wrap row;
   align-items: center;
-  margin: auto;
+  justify-content: center;
+  margin: 10px auto;
 }
