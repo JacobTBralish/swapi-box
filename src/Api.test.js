@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { fetchApi, getScroll, getPeople, getPlanets, getVehicles, getFilmNum } from './api'
 import { 
   mockPeople, 
@@ -155,6 +157,14 @@ describe('api', () => {
       const cleanedVehicles = await getVehicles()
 
       expect(cleanedVehicles).toEqual(cleanVehiclesMock)
+    })
+
+    test('that it is called with the correct parameters', async () => {
+      const expectedURL = 'https://swapi.co/api/vehicles'
+
+      const cleanedVehicles = await getVehicles();
+
+      expect(window.fetch).toHaveBeenCalledWith(expectedURL)
     })
   })
 

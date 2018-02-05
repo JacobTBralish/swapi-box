@@ -2,22 +2,22 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
-import { getScroll, getFilmNum } from '../api.js'
+import { getScroll, getFilmNum } from '../api.js';
 
 class App extends Component {
   constructor() {
-    super()
+    super();
 
     this.state = {
       scroll: {}
-    }
+    };
   }
 
   async componentDidMount() {
-    const scroll = await getScroll(getFilmNum())
+    const scroll = await getScroll(getFilmNum());
     this.setState({
       scroll
-    })
+    });
   }
 
   render() {

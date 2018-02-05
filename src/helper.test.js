@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { addFavoriteProp, makeNewState } from './helper'
 
 describe('favorite helper functions', () => {

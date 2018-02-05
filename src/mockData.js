@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 export const mockPeople = [
     {
       "name": "Luke Skywalker",

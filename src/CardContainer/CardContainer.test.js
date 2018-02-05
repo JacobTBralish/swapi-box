@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import CardContainer from './CardContainer';
@@ -9,7 +11,6 @@ import { mockPeople, mockVehicles, mockPlanets, cleanPeopleMock, cleanPlanetsMoc
 
 describe('CardContainer Component', () => {
   beforeAll(() => {
-
 
     window.fetch = jest.fn().mockImplementation(() => {
       return Promise.resolve({
