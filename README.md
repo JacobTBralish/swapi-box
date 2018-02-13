@@ -14,8 +14,6 @@ For initial set up:
   npm install
   npm run - visit whatever localhost channel 
   
-    brew install postgresql
- 
 ## Tests
 
 Tests were made using Jest and Enzyme and can be run using the command: npm test
